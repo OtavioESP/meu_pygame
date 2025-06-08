@@ -1,9 +1,9 @@
+from utils.enums import Card
+
 class Orchestrator:
-    # Aqui colocar todas as variaveis e funcoes de controle do game, quando iniciar
-    # Para poder ter ocntrole de tosos os metodos de todos os players
+    
     def __init__(self):
-        pass
-        # player count
-        # turn
-        # available cards
-        
+        self.AVAILABLE_CARDS = [(card.card_name, card.card_value) for card in Card]
+        self.SCORE = 0
+        self.CARDS_SUM = 0
+        self.TURN = 0
