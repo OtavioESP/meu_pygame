@@ -152,7 +152,7 @@ def table_turn():
     """Handle table's turn"""
     global is_player_turn, game_over
     
-    while table_sum < 21:  # Table will keep drawing until it reaches at least 17
+    while (table_sum < 17) or (table_sum <= player_sum):  # Table will keep drawing until it reaches at least 17
         deal_card(is_player=False)
         pygame.time.wait(1000)  # Wait 1 second between draws
         screen.blit(background, (0, 0))  # Draw background instead of filling with green
