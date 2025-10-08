@@ -8,6 +8,8 @@ from random import choice
 from utils.enums import Card
 from utils.consts import *
 
+
+
 CLICK_COOLDOWN = 1.0
 # Initialize pygame
 pygame.init()
